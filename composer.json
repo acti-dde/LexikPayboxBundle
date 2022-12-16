@@ -2,22 +2,24 @@
     "name": "lexik/paybox-bundle",
     "type": "symfony-bundle",
     "description": "LexikPayboxBundle eases the implementation of the Paybox payment system.",
-    "keywords": ["Symfony2", "bundle", "Paybox", "Payment"],
+    "keywords": ["Symfony5", "bundle", "Paybox", "Payment"],
     "homepage": "https://github.com/lexik/LexikPayboxBundle",
     "license": "MIT",
     "authors": [
         { "name": "Lexik", "email": "dev@lexik.fr" },
-        { "name": "Olivier Maisonneuve", "email": "o.maisonneuve@lexik.fr" }
+        { "name": "Olivier Maisonneuve", "email": "o.maisonneuve@lexik.fr" },
+        { "name": "Dorian Devaux", "email": "d.devaux@acti.fr" }
     ],
     "require": {
         "php": ">=7.4",
-        "psr/log": "~1.0",
         "lib-curl": ">=7.10.0",
         "lib-openssl": ">=0.9.6",
-        "symfony/framework-bundle": "~4.0|^5.0",
-        "symfony/form": "~4.0|^5.0",
-        "symfony/options-resolver": "~4.0|^5.0",
-        "kriswallsmith/buzz": "~0.15"
+        "kriswallsmith/buzz": "^1.2",
+        "psr/log": "~1.0",
+        "symfony/event-dispatcher-contracts": "^1|^2|^3",
+        "symfony/form": "^5.0",
+        "symfony/framework-bundle": "^5.0",
+        "symfony/options-resolver": "^5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
@@ -25,9 +27,7 @@
     "autoload": {
         "psr-4": { "Lexik\\Bundle\\PayboxBundle\\": "" }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x.x-dev"
-        }
+    "config": {
+        "sort-packages": true
     }
 }
