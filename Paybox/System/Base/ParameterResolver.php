@@ -66,6 +66,7 @@ class ParameterResolver extends AbstractParameterResolver
         'PBX_ATTENTE',
         'PBX_SOUHAITAUTHENT',
         'PBX_BILLING',
+        'PBX_SHOPPINGCART',
     );
 
     /**
