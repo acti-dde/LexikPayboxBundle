@@ -65,6 +65,7 @@ class ParameterResolver extends AbstractParameterResolver
         'PBX_TYPEPAIEMENT',
         'PBX_ATTENTE',
         'PBX_SOUHAITAUTHENT',
+        'PBX_BILLING',
     );
 
     /**
